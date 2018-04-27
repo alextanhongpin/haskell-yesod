@@ -36,6 +36,19 @@ $ stack build
 $ stack exec -- yesod devel
 ```
 
+## Pull
+
+```bash
+$ stack docker pull
+```
+
+## View
+
+```bash
+$ docker images | grep fpco/stack-build
+fpco/stack-build                                lts-11.6            91e60896cf30        6 weeks ago         7.15GB
+```
+
 ## Database Setup
 
 After installing MySQL, run:
