@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  mysql:
+    image: mysql:8.0.11
+    environment:
+    # - MYSQL_ROOT_PASSWORD=123456
+    - MYSQL_DATABASE=haskell-api
+    - MYSQL_USER=haskell-api
+    - MYSQL_PASSWORD=haskell-api
+    - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    volumes:
+    - ./tmp:/var/lib/mysql
